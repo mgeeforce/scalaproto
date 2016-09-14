@@ -4,16 +4,6 @@
 
 GET     /tickets/available/         controllers.Tickets.ticketsAvailable
 
-# Course Resource
-POST	/courses/					controllers.Courses.create
-GET		/courses/					controllers.Courses.list
-GET		/courses/:courseId			controllers.Courses.getById(courseId: Long)
-
-# TeeSheet Resource
-POST	/teesheet/					controllers.TeeSheets.create
-GET		/teesheet/ 					controllers.TeeSheets.list
-GET		/teesheet/:teeSheetId		controllers.TeeSheets.getById(teeSheetId: Long)
-
 GET     /jsr/       				controllers.HomeController.jsRoutes
 # An example controller showing a sample home page
 GET     /                           controllers.HomeController.index
